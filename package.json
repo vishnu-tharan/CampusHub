@@ -1,0 +1,51 @@
+{
+  "name": "campushub",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0 <23 || >=24.0.0"
+  },
+  "scripts": {
+    "dev": "next dev --webpack --port 3001",
+    "build": "next build --webpack",
+    "start": "next start --port 3001",
+    "lint": "eslint .",
+    "test": "node --test tests/validation.test.js tests/time.test.js",
+    "db:seed": "node scripts/seed.js",
+    "user:role": "node scripts/set-role.js",
+    "env:setup": "node scripts/setup-env.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "@better-auth/mongo-adapter": "1.7.8",
+    "better-auth": "1.7.8",
+    "date-fns": "4.1.0",
+    "date-fns-tz": "3.2.0",
+    "dotenv": "17.2.3",
+    "lucide-react": "^0.468.0",
+    "mongodb": "^7.8.0",
+    "next": "16.4.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "server-only": "0.0.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.3",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.4.1",
+    "prettier": "3.9.10",
+    "tailwindcss": "4.3.3"
+  },
+  "overrides": {
+    "mysql2": "3.24.6",
+    "deepmerge-ts": "8.0.2"
+  },
+  "author": "vishnu-tharan",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vishnu-tharan/CampusHub.git"
+  }
+}

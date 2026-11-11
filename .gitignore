@@ -1,0 +1,33 @@
+# Dependencies and generated output
+node_modules/
+.next/
+out/
+dist/
+coverage/
+
+# Local settings and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local backups, databases, and logs
+.backups/
+backups/
+*.sql.gz
+*.dump
+*.bak
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Operating system and editor state
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
